@@ -6,7 +6,7 @@
 /*   By: esalim <esalim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:41:24 by esalim            #+#    #+#             */
-/*   Updated: 2022/10/18 16:05:29 by esalim           ###   ########.fr       */
+/*   Updated: 2022/10/18 16:48:12 by esalim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 char    *ft_strchr(const char *str, int c);
 void	ft_putchar(char c, int *count);
 void	ft_putstr(char *str, int *count);
-void	ft_putnbr(long nbr, int *count);
-void	ft_putnbr_base(long nbr, char *base, int *count);
+void	ft_putnbr(long nbr,int isunsigned, int *count);
+void	ft_putnbr_base(long nbr, char *base, int islong, int *count);
 int		ft_printf(const char *str, ...);
 
 # endif
