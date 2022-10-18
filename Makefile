@@ -6,7 +6,7 @@
 #    By: esalim <esalim@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/15 12:59:48 by esalim            #+#    #+#              #
-#    Updated: 2022/10/18 12:48:33 by esalim           ###   ########.fr        #
+#    Updated: 2022/10/18 18:15:58 by esalim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,10 +28,10 @@ $(NAME): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^
 
-clean: $(OBJS)
-	$(RM) -rf $^
-
 fclean: clean
 	$(RM) -rf $(NAME)
 
-re: all $(NAME)
+clean:
+	$(RM) -rf $(OBJS)
+
+re: fclean all
